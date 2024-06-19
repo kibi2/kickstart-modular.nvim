@@ -53,4 +53,7 @@ vim.opt.showtabline = 2 -- タブラインを表示
 -- カーソルの形状
 vim.o.guicursor = 'n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20'
 
+-- Determine how text with the "conceal" syntax attribute
+vim.api.nvim_set_option_value('conceallevel', 3, {})
+
 -- vim: ts=2 sts=2 sw=2 et
