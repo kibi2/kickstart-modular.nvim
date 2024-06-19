@@ -1,0 +1,204 @@
+vim-help.txt*
+
+========== ヘルプ~
+quickref index option-list functions dunction-list vim-variable help-tags
+K               # カーソル下のヘルプ
+add-local-help write-local-help help-writing helptags ~/vimfiles/doc
+Q_ta :tags		# タグ一覧
+
+========== Chap2ノーマルモード~
+gJ	空白なし結合
+<C-a><C-x>	            # (10)加減算
+gu gU > < = !			# (12)オペレーター
+
+========== Chap3挿入モード insert.txt~
+<C-h> <C-w> <C-u>       # (13)1文字、1単語、全単語削除
+<C-o>                   # (14)一度だけノーマルモード
+<C-r>{register}         # (15)レジスタput
+<C-r>=getcwd()          # (16)式評価put,Expressionモード
+<C-t> <C-d>             # indent 変更
+<S-Left> <Home> <End>	# 単語単位移動、先頭、最終
+# Chap19 自動補完
+
+========== Chap4ビジュアルモード Q_vi~
+gv			# (24)再選択
+v_o			# (21)端点切替
+
+========== Chap5コマンドラインモード, Exモード~
+ex-cmd-index			# (27,29,30) :d :y :pu :co :t :m :j :norm :s :g
+c_<C-v> c_<C-k>			# (28)鍵盤にない文字入力 <C-k>a5
+range					# (28)範囲指定
+@:						# (31)Exコマンド繰り返し(macor 実行) ex. :bn, @:, @@, <C-o>
+<C-d> <Tab> <S-Tab>		# (32)補完
+c_<C-R>_<C-W>			# (33)カーソル下のword参照 ex. :h <C-r><C-w>
+c_<C-r>_<C-a>			# (33)カーソル下のWORD参照
+<up> <down> <C-p> <C-n>	# (34)履歴呼び出し(:history)
+q/ q: <C-f> :q			# (34)コマンドラインウィンドウの開閉
+:sh read! :write_c		# (35)shell呼び出し ex. :h rename-files
+:range! !				# (35)フィルタリング
+c_<C-h> <C-w> <C-u>     # (13)1文字、1単語、全単語削除
+c_<C-b> <C-e>           # 行頭、行末移動
+Q_ce
+<C-c> <C-[>	<Esc>
+<S-Left> <Home> <End>	# 単語単位移動、先頭、最終
+<C-r>{register}			# レジスタ参照
+%						# 現ファイル名
+
+========== Chap6複数ファイル Q_bu Q_ed~
+:ls :bn ]b :bufdo				# (36)buffer list（C-w、tab、argsを使え）
+:args_f :n :p 					# (37)引数リスト
+:e!	:argdo 'hidden :wa			# (38)隠しバッファ、再読み込み
+CTRL-w_s :sp CTRL-w_c CTRL-w_o	# (39)Q_wi window-resize window-moving
+tabpage :lcd :windo :tabm 		# (40)tab ex. :windo lcd ~ 
+:tabe CTRL-W_T :tabc :tabo :gt :gT	# (40) tab ex. tabm 0
+:enew							# 新ファイル
+
+========== Chap7ファイル開く、保存~
+::h 'path :find :Explore :netrw	# (41) :edit ex. :e. :E
+netrw-% netrw-d netrw-rename netrw-del netrw-ref
+:!mkdir -p %:h					# (44)存在しないディレクトにファイルを保存する
+:w !sudo tee % > /dev/null		# (45) スーパーユーザーとしてファイルに保存
+
+========== Chap8モーション motion.txt~
+-+ gk gj g0 g$			# (47)上下移動
+w b e ge gE         	# (48)単語のお尻
+f ; , F t				# (49)文字を検索
+Q_to					# (51)<hoge>{a(b[cd]e)f}</hoge>
+[ai]wWspbB>t'"`	    	# (51,52)word, WORD, sentence, paragraph, block(), BLOCK{}, <>,  tag, '"`
+mm `m 'm        		# (53)マーク、行に移動するか桁にも移動するか(:marks)
+# (53)自動マーク ` ジャンプ . 変更 ^ 挿入 [ 先頭 ] # 末尾 < v_先頭 > v_末尾
+matchit-install			# (54)対となるキーワード間の移動
+						# (54)plugin Surround.vim
+
+========== Chap9ジャンプ ~
+<C-o> <C-i> <Tab>			# (55)ジャンプリストを移動 jumplist
+G ( ) { } H M L gf <C-}>	# (55)ジャンプ
+'. g; g, gi     			# (56)最後（前後）の編集位置、挿入位置 changelist
+gf 'suffixesadd 'path		# (57)カーソル下開
+gm              			# 行の中央
+[ ][ ( { [m [*     			# プログラム構文
+z[tzb]          			# スクロール
+[count]|        			# count桁目
+
+========== Chap10 コピー＆ペースト~
+" 0 a-z _ + * =		# (60)無名 ヤンク 名前 ブラックホール クリップボード 式
+quote. # /			# (60)読み取り専用レジスタ
+:reg 1a				# (60)一覧
+# (61) ヴィジュアルモードでプットすると削除された部分がヤンクされる
+# (62) i<C-r>0 が便利なときもある。 gP も使える。
+
+========== Chap11 マクロ~
+qa q 22@a @@			# (64)記録開始、終了、実行、繰り返し
+# (67) 並列実行、Vで範囲を選択して :'<,'>normal @a で実行する
+qA						# (68) マクロにコマンドを追記する
+# (69) 複数バッファ並列実行 :argdo normal @a	:wall :wnext
+# (69) 直列実行 :next を追記し 22@a
+# (70) イテレータを評価してリスト中の要素に番号を付ける
+	:let i=1
+	qa
+	I<C-r>=i<CR>)<Esc>
+	:let i+=1
+	q
+# (71) マクロ編集 G:put a 修正 0"ay$ dd ファイルの最後にマクロを展開
+
+========== Chap12 パターンとリテラルのマッチ	:h Q_pa~
+* # g* g# 					# 単語検索
+/ignorecase		 			# (72)ignorecase \c \C
+\v \V /character-class	   	# (73,74)very (no)magic ex. /\V**
+/\( \1 \%(					# (75)部分マッチをキャプチャ
+/\< /\zs 					# (76,77)マッチ境界
+
+========== Chap13 検索~
+CTRL-l	# (80)nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+:%s///gn					# (82)マッチする数を数える,n:置換しない
+/patern/e search-offset		# (83)マッチ末尾にカーソルをオフセットする
+gn							# (84)テキストオブジェクトとしてマッチを使う
+# (85)複雑なパターンを作り上げる
+//							# 直前の検索
+q/							# コマンドラインウィンドウを表示する
+c%(<C-r>")<Esc>				# 括弧で囲む
+/\v'(([^'])+)'	:%s//"\1"/g	# '{words}'を"{words}"に変更する
+visual-star.vim				# (86)ビジュアルな選択範囲の検索プラグイン
+
+========== Chap14 置換~
+s_flags :s_c				# (87)置換フラグ
+:%s//{string}/g				# (90)visualstarで検索したものを全部置換するなど，検索と置換を分けると便利
+# (90)「:s//」の代わりに「:s/<C-r>//」とするとコマンド履歴に保存可能
+:%s//\=0/g					# (91)検索した文字列をヤンクレジスタ（特殊文字、複数行など）で置き換える
+:%s//\=@a/g					# (91)前回検索した内容をレジスタaの内容で置き換える
+g& :& :[rangee]&[&]			# (92)行単位の置換を範囲を変更して繰り返す
+:%s/\v\<\/?h\zs\d/\=submatch(0)-1/g		# (94) <h2 を <h1 に置換する
+Abolish.vim					# (95)plugin 超機能強化した置換コマンド「:S」を提供する
+qargs.vim					# (96)plugin 複数ファイル検索しターゲットを絞って置換する
+
+========== Chap15 グローバルコマンド~
+:g :v :g/re/p :g/re/d		# (98)grep = global regular-expression print
+:g/{pattern}/yank A			# (99){pattern}を含む行をレジスタAに複写する
+:g/{pattern}/t$				# (99){pattern}を含む行をファイルの最後に複写する
+:g/{/ .+1,/}/-1 sort		# (100){を検索して次の行から}の一つ前の行までをソートし繰り返す
+:g/{start}/ .,{finish} [cmd] :sil
+
+========== Chap16 ctags~
+'tags	# (102)バージョン管理システムのフックを使ってctagsを自動生成する
+tag-stack <C-]> <C-t> g<C-]> :tag :tjump
+
+========== Chap17 Q_qf quickfix~
+:c[npl]						# 次前全部
+
+========== Chap18 grep/vimgrep~
+:grep 'grepprg 'grepformat # (108)エラーになるなあ…
+ack
+:vimgrep
+
+========== Chap19 自動補完~
+'infercase <C-n> <C-p> ins-completion		# (111)
+popupmenu-completion <C-e>		# (112)補完終了
+<C-n><C-p>				# (112)絞り込み
+<C-x><C-n> :ls!			# (113)キーワードの定義元を把握する
+<C-x><C-i>				# (113)Pythonのimportも読み込む
+<C-x><C-]>				# (113)タグファイルを使う
+'complete
+<C-x><C-k> compl-dictionary		# (114)辞書
+<C-x><C-l> compl-whole-line		# (115)行を丸ごと
+<C-x><C-f> compl-filename		# (116)ファイル名
+<C-x><C-o> compl-omni-filetypes	# (117)コンテキストに合わせて自動補完
+
+========== Chap20 スペルチェッカ~
+:spell
+
+========== 付録A~
+:autocmd
+~/.vim/after/ftplugin/javascript.vim
+
+========== 折り畳み~
+z[doc]      # 折り畳み delete, open, close
+z[mr]       # 全折り畳み more, reduce
+
+========== terminal~
+<C-w>:	# コマンドラインモード
+<C-w>N	# ノーマルモード
+:vert term ++close git log	# git log 表示
+
+========== plugin~
+lazygit
+
+========== Vimスクリプト~
+:map :map! :abbreviate      # マップ一覧、短縮形
+[nicv][nore]map[!]	ノーマル，挿入，Ex，ヴィジュアル
+g:	グローバル
+b:	バッファローカル
+w:	ウィンドウローカル
+t:	タブページローカル
+s:	スクリプトローカル
+l:	関数ローカル
+v:	組み込み変数
+a:	関数の引数
+
+========== その他
+https://zenn.dev/vim_jp/articles/2024-06-05-vim-middle-class-features
+
+========== WezTerm
+<C-S-Space>		# Quick Select Mode
+
+
+vim:tw=78:ts=4:noet:ft=help:norl:
