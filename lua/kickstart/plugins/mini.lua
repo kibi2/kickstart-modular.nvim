@@ -37,7 +37,7 @@ return {
       require('mini.bufremove').setup() -- バッファ削除時の動作
       require('mini.cursorword').setup() -- カーソル位置の単語をハイライト
       require('mini.jump').setup() -- f,t を複数行に拡張
-      require('mini.starter').setup() -- 起動画面
+      -- require('mini.starter').setup() -- 起動画面
       require('mini.tabline').setup() -- タブにバッファ表示
       require('mini.trailspace').setup() -- 行末の連続空白行
     end,
