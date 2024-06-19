@@ -29,13 +29,13 @@ return {
       -- cursor location to LINE:COLUMN
       ---@diagnostic disable-next-line: duplicate-set-field
       statusline.section_location = function()
-        return '%2l:%-2v'
+        return '%3l:%-2v'
       end
 
       -- ... and there is more!
       --  Check out: https://github.com/echasnovski/mini.nvim
       require('mini.bufremove').setup() -- バッファ削除時の動作
-      require('mini.cursorword').setup() -- カーソル位置の単語をハイライト
+      -- require('mini.cursorword').setup() -- カーソル位置の単語をハイライト：LSPにある
       require('mini.jump').setup() -- f,t を複数行に拡張
       -- require('mini.starter').setup() -- 起動画面
       require('mini.tabline').setup() -- タブにバッファ表示
