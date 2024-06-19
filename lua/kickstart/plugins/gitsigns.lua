@@ -13,7 +13,9 @@ return {
         delete = { text = '_' },
         topdelete = { text = '‾' },
         changedelete = { text = '~' },
+        untracked = { text = ':' },
       },
+      attch_to_untracked = true,
       on_attach = function(bufnr)
         local gitsigns = require 'gitsigns'
 

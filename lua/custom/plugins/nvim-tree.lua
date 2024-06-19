@@ -1,12 +1,12 @@
 -- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 return {
-  -- Short plugin url. 
+  -- Short plugin url.
   'nvim-tree/nvim-tree.lua',
   -- lazy = false,
-  -- A list of plugin names or plugin specs that should be loaded when the plugin loads. 
+  -- A list of plugin names or plugin specs that should be loaded when the plugin loads.
   dependencies = {
     'nvim-tree/nvim-web-devicons',
-    'nvim-telescope/telescope.nvim'
+    'nvim-telescope/telescope.nvim',
   },
 
   -- init functions are always executed during startup
@@ -18,16 +18,16 @@ return {
     vim.opt.termguicolors = true
   end,
 
-  -- The table will be passed to the Plugin.config() function. 
+  -- The table will be passed to the Plugin.config() function.
   opts = {
     sort_by = 'extension',
     view = {
       width = '20%',
-      side = 'right',
-      signcolumn = 'yes',  -- yes, auto, no
+      side = 'right', -- current はない。残念
+      signcolumn = 'yes', -- yes, auto, no
     },
     sort = {
-      sorter = "case_sensitive",
+      sorter = 'case_sensitive',
     },
     renderer = {
       -- group_empty = true,
@@ -58,16 +58,15 @@ return {
     },
     -- on_attach = 'default',
     -- on_attach = require('extensions.nvim-tree-actions').on_attach,
-
   },
 
   -- Lazy-load on key mapping
   keys = {
     {
-      mode = "n",
-      "<C-n>",
-      "<cmd>NvimTreeToggle<CR>",
-      desc = "NvimTreeをトグルする",
+      mode = 'n',
+      '<C-n>',
+      '<cmd>NvimTreeToggle<CR>',
+      desc = 'NvimTreeをトグルする',
     },
   },
 }
