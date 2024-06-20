@@ -33,7 +33,7 @@ range					# (28)範囲指定
 c_<C-R>_<C-W>			# (33)カーソル下のword参照 ex. :h <C-r><C-w>
 c_<C-r>_<C-a>			# (33)カーソル下のWORD参照
 <up> <down> <C-p> <C-n>	# (34)履歴呼び出し(:history)
-q/ q: <C-f> :q			# (34)コマンドラインウィンドウの開閉
+q/ q: :<C-f> :q			# (34)コマンドラインウィンドウの開閉
 :sh read! :write_c		# (35)shell呼び出し ex. :h rename-files
 :range! !				# (35)フィルタリング
 c_<C-h> <C-w> <C-u>     # (13)1文字、1単語、全単語削除
@@ -131,6 +131,7 @@ g& :& :[rangee]&[&]			# (92)行単位の置換を範囲を変更して繰り返�
 :%s/\v\<\/?h\zs\d/\=submatch(0)-1/g		# (94) <h2 を <h1 に置換する
 Abolish.vim					# (95)plugin 超機能強化した置換コマンド「:S」を提供する
 qargs.vim					# (96)plugin 複数ファイル検索しターゲットを絞って置換する
+:vimgrep :grep :copen		# (M2)
 
 ========== Chap15 グローバルコマンド~
 :g :v :g/re/p :g/re/d		# (98)grep = global regular-expression print
