@@ -49,6 +49,7 @@ Q_ce
 :args_f :n :p 					# (37)引数リスト
 :e!	:argdo 'hidden :wa			# (38)隠しバッファ、再読み込み
 CTRL-w_s :sp CTRL-w_c CTRL-w_o	# (39)Q_wi window-resize window-moving
+CTRL-w_H CTRL-w_r CTRL-w_x		# (M2)swap :h window-moving
 tabpage :lcd :windo :tabm 		# (40)tab ex. :windo lcd ~ 
 :tabe CTRL-W_T :tabc :tabo :gt :gT	# (40) tab ex. tabm 0
 :enew							# 新ファイル
