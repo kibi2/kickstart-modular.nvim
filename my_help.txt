@@ -198,6 +198,7 @@ a:	関数の引数
 
 ========== その他
 https://zenn.dev/vim_jp/articles/2024-06-05-vim-middle-class-features
+vimdiff
 
 ========== WezTerm
 <C-S-Space>		# Quick Select Mode
