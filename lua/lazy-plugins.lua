@@ -42,6 +42,7 @@ require('lazy').setup({
   require 'kickstart/plugins/cmp', -- Autocompletion
 
   require 'kickstart/plugins/tokyonight', -- colorschemes
+  -- require 'custom/plugins/onenord', -- color schemes
 
   require 'kickstart/plugins/todo-comments', -- Highlight todo, notes, etc in comments
 
@@ -54,7 +55,8 @@ require('lazy').setup({
   require 'custom/plugins/hop', -- easy move
 
   -- require 'custom/plugins/lualine', -- status line : うまく動かない
-  -- require 'custom/plugins/incline', -- status line
+  -- require 'custom/plugins/incline', -- status line : うまく動かない
+  -- require 'custom/plugins/feline', -- status line : エラーが発生する
 
   require 'custom/plugins/noice', -- コマンドラインフォローティグ表示
   require 'custom/plugins/notify', -- notify フローティグ表示
@@ -62,8 +64,6 @@ require('lazy').setup({
   require 'custom/plugins/nvim-hlslens', -- 検索強化
 
   require 'custom/plugins/nvim-tree', -- ファイラー
-
-  -- require 'custom/plugins/onenord', -- color scheme
 
   require 'custom/plugins/scrollbar', -- scrollbar に情報表示
 
