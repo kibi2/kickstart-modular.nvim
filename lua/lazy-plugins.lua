@@ -29,6 +29,7 @@ require('lazy').setup({
   -- include a plugin definition from file lua/path/name.lua
 
   require 'kickstart/plugins/gitsigns', -- 行ごとに追加、変更、削除表示
+  -- require 'custom/plugins/gitgutter',  -- gitsigns と同等？
 
   require 'kickstart/plugins/which-key', -- 入力補完
 
@@ -48,8 +49,30 @@ require('lazy').setup({
 
   require 'kickstart/plugins/treesitter', -- Highlight, edit, and navigate code
 
+  require 'custom/plugins/fugitive', -- Git コマンドラッパー
+
+  require 'custom/plugins/hop', -- easy move
+
+  -- require 'custom/plugins/lualine', -- status line : うまく動かない
+  -- require 'custom/plugins/incline', -- status line
+
+  require 'custom/plugins/noice', -- コマンドラインフォローティグ表示
+  require 'custom/plugins/notify', -- notify フローティグ表示
+
+  require 'custom/plugins/nvim-hlslens', -- 検索強化
+
+  require 'custom/plugins/nvim-tree', -- ファイラー
+
+  -- require 'custom/plugins/onenord', -- color scheme
+
+  require 'custom/plugins/scrollbar', -- scrollbar に情報表示
+
+  require 'custom/plugins/undotree', -- undotree 可視化
+
+  require 'custom/plugins/win-ime-con', -- IME 自動切換え
+
   -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
-  -- init.lua. If you want these files, they are in the repository, so you can just download them and
+  -- init. If you want these files, they are in the repository, so you can just download them and
   -- place them in the correct locations.
 
   -- NOTE: Next step on your Neovim journey: Add/Configure additional plugins for Kickstart
@@ -68,7 +91,7 @@ require('lazy').setup({
   --
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
   --    For additional information, see `:help lazy.nvim-lazy.nvim-structuring-your-plugins`
-  { import = 'custom.plugins' },
+  -- { import = 'custom.plugins' },
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the

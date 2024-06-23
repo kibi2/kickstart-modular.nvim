@@ -13,6 +13,7 @@ vim.g.have_nerd_font = true
 -- [[ Setting options ]]
 require 'options'
 require 'my_options'
+require 'my_envs'
 
 -- [[ Basic Keymaps ]]
 require 'keymaps'

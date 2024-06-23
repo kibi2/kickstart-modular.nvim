@@ -2,7 +2,7 @@
 return {
   'rcarriga/nvim-notify',
   opts = {
-    top_down = false,
+    top_down = true,
   },
   init = function()
     local notify = require 'notify'

@@ -23,7 +23,7 @@ return {
     sort_by = 'extension',
     view = {
       width = '20%',
-      side = 'right', -- current はない。残念
+      side = 'left', -- current はない。残念
       signcolumn = 'yes', -- yes, auto, no
     },
     sort = {
