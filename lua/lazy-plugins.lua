@@ -71,6 +71,9 @@ require('lazy').setup({
 
   require 'custom/plugins/win-ime-con', -- IME 自動切換え
 
+  -- require 'custom/plugins/previm', -- markdown プレビュー : ブラウザが開かない
+  require 'custom/plugins/markdown-preview', -- markdown プレビュー
+
   -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init. If you want these files, they are in the repository, so you can just download them and
   -- place them in the correct locations.
