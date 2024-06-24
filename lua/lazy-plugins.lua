@@ -73,10 +73,10 @@ require('lazy').setup({
   --require 'custom/plugins/win-ime-con', -- IME 自動切換え : 起動時に遅い
   -- require 'custom/plugins/spzenhan', -- IME 自動切換え : エラーが発生する
 
-  -- require 'custom/plugins/previm', -- markdown プレビュー : ブラウザが開かない
   require 'custom/plugins/markdown-preview', -- markdown プレビュー : これは使える
-  -- require 'custom/plugins/obsidian-bridge', -- markdown プレビュー + obsidian : エラーがでまくる
   require 'custom/plugins/render-markdown', -- markdown プレビュー : これは使える
+  -- require 'custom/plugins/previm', -- markdown プレビュー : ブラウザが開かない
+  -- require 'custom/plugins/obsidian-bridge', -- markdown プレビュー + obsidian : エラーがでまくる
 
   require 'custom/plugins/vimdoc-ja', -- markdown プレビュー : これは使える
 

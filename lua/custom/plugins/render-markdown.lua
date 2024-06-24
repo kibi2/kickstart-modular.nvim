@@ -4,7 +4,8 @@ return {
   name = 'render-markdown', -- Only needed if you have another plugin named markdown.nvim
   dependencies = { 'nvim-treesitter/nvim-treesitter' },
   config = function()
-    require('render-markdown').setup {}
+    -- conceallevel, concealcursor を変更しない
+    require('render-markdown').setup { win_options = {} }
   end,
   ft = {
     'markdown',
