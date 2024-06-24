@@ -37,5 +37,5 @@ return {
     }
   end,
   -- event = 'BufEnter',
-  -- event = 'InsertEnter',
+  event = 'InsertEnter',
 }
