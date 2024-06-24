@@ -69,13 +69,16 @@ require('lazy').setup({
 
   require 'custom/plugins/undotree', -- undotree 可視化
 
-  require 'custom/plugins/win-ime-con', -- IME 自動切換え : 起動時に遅い
+  require 'custom/plugins/im-select', -- IME 自動切換え :
+  --require 'custom/plugins/win-ime-con', -- IME 自動切換え : 起動時に遅い
   -- require 'custom/plugins/spzenhan', -- IME 自動切換え : エラーが発生する
 
   -- require 'custom/plugins/previm', -- markdown プレビュー : ブラウザが開かない
   require 'custom/plugins/markdown-preview', -- markdown プレビュー : これは使える
   -- require 'custom/plugins/obsidian-bridge', -- markdown プレビュー + obsidian : エラーがでまくる
   require 'custom/plugins/render-markdown', -- markdown プレビュー : これは使える
+
+  require 'custom/plugins/vimdoc-ja', -- markdown プレビュー : これは使える
 
   -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init. If you want these files, they are in the repository, so you can just download them and
