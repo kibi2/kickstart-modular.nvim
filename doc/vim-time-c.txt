@@ -1,0 +1,60 @@
+Extra options: [--clean]
+Measured: 10 times
+
+Total Average: 106.687900 msec
+Total Max:     112.159000 msec
+Total Min:     102.920000 msec
+
+  AVERAGE       MAX       MIN
+------------------------------
+57.492000 62.663000 54.903000: require('vim._defaults')
+23.720800 24.474000 22.911000: locale set
+ 7.970200  9.232000  7.332000: loading rtp plugins
+ 3.165400  3.483000  2.930000: F:\Program Files\Neovim\share/nvim/runtime/syntax/syntax.vim
+ 2.231400  3.379000  1.933000: F:\Program Files\Neovim\share\nvim\runtime\plugin\matchit.vim
+ 1.807400  1.925000  1.655000: require('vim._init_packages')
+ 1.326800  1.406000  1.256000: sourcing vimrc file(s)
+ 1.208900  1.296000  1.115000: require('vim._editor')
+ 1.108200  1.173000  1.066000: inits 1
+ 0.959800  1.033000  0.906000: init lua interpreter
+ 0.800500  0.839000  0.774000: init highlight
+ 0.782100  0.853000  0.705000: F:\Program Files\Neovim\share\nvim\runtime\plugin\netrwPlugin.vim
+ 0.690400  1.295000  0.562000: F:\Program Files\Neovim\share\nvim\runtime\pack\dist\opt\matchit\plugin\matchit.vim
+ 0.576500  0.842000  0.471000: F:\Program Files\Neovim\share\nvim\runtime\plugin\gzip.vim
+ 0.546800  0.807000  0.491000: loading after plugins
+ 0.436000  0.521000  0.393000: require('vim.shared')
+ 0.417900  0.492000  0.381000: require('vim._options')
+ 0.411800  0.864000  0.334000: opening buffers
+ 0.357500  0.451000  0.292000: F:\Program Files\Neovim\share\nvim\runtime\plugin\matchparen.vim
+ 0.357200  0.503000  0.310000: F:\Program Files\Neovim\share\nvim\runtime\filetype.lua
+ 0.292000  0.368000  0.230000: F:\Program Files\Neovim\share\nvim\runtime\plugin\zipPlugin.vim
+ 0.260400  0.358000  0.198000: F:\Program Files\Neovim\share\nvim\runtime\plugin\tarPlugin.vim
+ 0.252700  0.336000  0.221000: require('vim.inspect')
+ 0.248500  0.373000  0.163000: early init
+ 0.216800  0.336000  0.192000: BufEnter autocommands
+ 0.202000  0.254000  0.154000: F:\Program Files\Neovim\share\nvim\runtime\plugin\man.lua
+ 0.201200  0.217000  0.180000: F:\Program Files\Neovim\share\nvim\runtime\syntax\synload.vim
+ 0.175300  0.226000  0.120000: F:\Program Files\Neovim\share\nvim\runtime\plugin\shada.vim
+ 0.172700  0.222000  0.126000: F:\Program Files\Neovim\share\nvim\runtime\plugin\editorconfig.lua
+ 0.171500  0.237000  0.121000: F:\Program Files\Neovim\share\nvim\runtime\plugin\osc52.lua
+ 0.157300  0.195000  0.104000: F:\Program Files\Neovim\share\nvim\runtime\ftplugin.vim
+ 0.151800  0.199000  0.101000: F:\Program Files\Neovim\share\nvim\runtime\plugin\rplugin.vim
+ 0.148000  0.180000  0.133000: loading packages
+ 0.147600  0.189000  0.110000: F:\Program Files\Neovim\share\nvim\runtime\plugin\tohtml.lua
+ 0.113300  0.121000  0.108000: expanding arguments
+ 0.111400  0.170000  0.078000: F:\Program Files\Neovim\share\nvim\runtime\indent.vim
+ 0.103400  0.127000  0.085000: event init
+ 0.084800  0.132000  0.058000: F:\Program Files\Neovim\share\nvim\runtime\plugin\tutor.vim
+ 0.076600  0.100000  0.056000: F:\Program Files\Neovim\share\nvim\runtime\plugin\spellfile.vim
+ 0.064000  0.086000  0.056000: init first window
+ 0.054500  0.075000  0.047000: inits 3
+ 0.053400  0.068000  0.048000: require('vim.keymap')
+ 0.026200  0.043000  0.023000: window checked
+ 0.018400  0.030000  0.016000: init default mappings & autocommands
+ 0.016400  0.021000  0.015000: --- NVIM STARTED ---
+ 0.015300  0.026000  0.013000: parsing arguments
+ 0.014400  0.015000  0.014000: clear screen
+ 0.013000  0.015000  0.011000: inits 2
+ 0.007500  0.020000  0.004000: --- NVIM STARTING ---
+ 0.005900  0.008000  0.005000: editing files in windows
+ 0.004100  0.005000  0.004000: reading ShaDa
