@@ -74,7 +74,7 @@ require('lazy').setup({
   -- require 'custom/plugins/spzenhan', -- IME 自動切換え : エラーが発生する
 
   require 'custom/plugins/markdown-preview', -- markdown プレビュー : これは使える
-  require 'custom/plugins/render-markdown', -- markdown プレビュー : これは使える
+  -- require 'custom/plugins/render-markdown', -- markdown プレビュー : これは使える
   -- require 'custom/plugins/previm', -- markdown プレビュー : ブラウザが開かない
   -- require 'custom/plugins/obsidian-bridge', -- markdown プレビュー + obsidian : エラーがでまくる
 
