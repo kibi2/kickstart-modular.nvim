@@ -102,6 +102,7 @@ require('lazy').setup({
   require 'custom/plugins/nvim-tree', -- ファイラー
   -- require 'kickstart.plugins.neo-tree',  -- filer
   -- require 'custom/plugins/neo-tree', -- ファイラー:プレビューでエラーになる
+  -- require 'custom/plugins/telescope-filer', -- ファイラー:まだ使いこなせない
 
   require 'custom/plugins/colorizer', -- 色を背景色で表示する
 
