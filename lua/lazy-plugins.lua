@@ -57,6 +57,8 @@ require('lazy').setup({
   -- require 'custom/plugins/lualine', -- status line : うまく動かない
   -- require 'custom/plugins/incline', -- status line : うまく動かない
   -- require 'custom/plugins/feline', -- status line : エラーが発生する
+  -- require 'custom/plugins/galaxyline', -- 使い方が良く分からなない
+  -- require 'custom/plugins/heirline', -- 使い方が良く分からなない
 
   require 'custom/plugins/noice', -- コマンドラインフォローティグ表示
   -- require 'custom/plugins/notify', -- notify フローティグ表示 : ウィンドウ移動で邪魔
