@@ -66,6 +66,7 @@ require('lazy').setup({
   require 'custom/plugins/nvim-hlslens', -- 検索強化
 
   require 'custom/plugins/nvim-tree', -- ファイラー
+  -- require 'custom/plugins/neo-tree', -- ファイラー:プレビューでエラーになる
 
   require 'custom/plugins/scrollbar', -- scrollbar に情報表示
 
