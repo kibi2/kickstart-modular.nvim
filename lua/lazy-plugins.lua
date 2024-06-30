@@ -11,6 +11,7 @@
 -- NOTE: Here is where you install your plugins.
 require('lazy').setup({
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
+
   -- 'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
   -- 'adelarsq/neoline.vim', -- status line
 
@@ -36,6 +37,7 @@ require('lazy').setup({
   require 'kickstart/plugins/telescope', -- あいまい検索
 
   require 'kickstart/plugins/lspconfig', -- LSP
+  require 'custom/plugins/lsp-lines', -- diagnositcs 改行表示
 
   require 'kickstart/plugins/conform', -- Autoformat
 
@@ -96,10 +98,12 @@ require('lazy').setup({
 
   -- require 'kickstart.plugins.lint', -- Linting
   -- require 'kickstart.plugins.autopairs', -- 括弧などを自動で閉じてくれる
-  --
+
   require 'custom/plugins/nvim-tree', -- ファイラー
   -- require 'kickstart.plugins.neo-tree',  -- filer
   -- require 'custom/plugins/neo-tree', -- ファイラー:プレビューでエラーになる
+
+  require 'custom/plugins/colorizer', -- 色を背景色で表示する
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
