@@ -48,6 +48,14 @@ return {
           end,
         },
         completion = { completeopt = 'menu,menuone,noinsert' },
+        window = {
+          completion = cmp.config.window.bordered {
+            border = 'single',
+          },
+          documentation = cmp.config.window.bordered {
+            border = 'single',
+          },
+        },
 
         -- For an understanding of why these mappings were
         -- chosen, you will need to read `:help ins-completion`
