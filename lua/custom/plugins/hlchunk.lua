@@ -8,7 +8,7 @@ return {
         enable = true,
         priority = 15,
         style = {
-          { bg = '#888888', fg = '#888888' },
+          { bg = '#CCCCCC', fg = '#CCCCCC' },
           -- { bg = vim.fn.synIDattr(vim.fn.synIDtrans(vim.fn.hlID 'Whitespace'), 'fg', 'gui') },
           -- { fg = '#806d9c' }, -- normal
           { fg = '#c21f30' }, -- error
@@ -34,13 +34,13 @@ return {
         priority = 10,
         -- style = { vim.api.nvim_get_hl(0, { name = 'Whitespace' }) },
         style = {
-          '#FF8888',
-          '#FF7F88',
-          '#FFFF88',
-          '#88FF88',
-          '#88FFFF',
-          '#8888FF',
-          '#8B88FF',
+          '#880000', --1
+          '#888800', --3
+          '#008888', --5
+          '#887800', --2
+          '#008800', --4
+          '#000088', --6
+          '#0B0088', --7
         },
         use_treesitter = false,
         chars = { '│' },

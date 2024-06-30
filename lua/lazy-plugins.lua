@@ -60,15 +60,12 @@ require('lazy').setup({
   -- require 'custom/plugins/galaxyline', -- 使い方が良く分からなない
   -- require 'custom/plugins/heirline', -- 使い方が良く分からなない
 
-  require 'custom/plugins/noice', -- コマンドラインフォローティグ表示
+  -- require 'custom/plugins/noice', -- コマンドラインフォローティグ表示
   -- require 'custom/plugins/notify', -- notify フローティグ表示 : ウィンドウ移動で邪魔
 
   require 'custom/plugins/nvim-hlslens', -- 検索強化
 
-  require 'custom/plugins/nvim-tree', -- ファイラー
-  -- require 'custom/plugins/neo-tree', -- ファイラー:プレビューでエラーになる
-
-  require 'custom/plugins/scrollbar', -- scrollbar に情報表示
+  -- require 'custom/plugins/scrollbar', -- scrollbar に情報表示
 
   require 'custom/plugins/undotree', -- undotree 可視化
 
@@ -81,7 +78,7 @@ require('lazy').setup({
   -- require 'custom/plugins/previm', -- markdown プレビュー : ブラウザが開かない
   -- require 'custom/plugins/obsidian-bridge', -- markdown プレビュー + obsidian : エラーがでまくる
 
-  require 'custom/plugins/vimdoc-ja', -- markdown プレビュー : これは使える
+  require 'custom/plugins/vimdoc-ja', -- 日本語ヘルプ
 
   -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init. If you want these files, they are in the repository, so you can just download them and
@@ -95,11 +92,14 @@ require('lazy').setup({
   -- require 'kickstart.plugins.debug', -- Debug Adapter Protocol client implementation
 
   -- require 'kickstart.plugins.indent_line', -- Add indentation guides
-  require 'custom/plugins/hlchunk', -- markdown プレビュー : これは使える
+  require 'custom/plugins/hlchunk', -- indent 表示
 
   -- require 'kickstart.plugins.lint', -- Linting
   -- require 'kickstart.plugins.autopairs', -- 括弧などを自動で閉じてくれる
+  --
+  require 'custom/plugins/nvim-tree', -- ファイラー
   -- require 'kickstart.plugins.neo-tree',  -- filer
+  -- require 'custom/plugins/neo-tree', -- ファイラー:プレビューでエラーになる
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
