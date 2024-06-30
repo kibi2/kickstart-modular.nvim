@@ -93,7 +93,10 @@ require('lazy').setup({
   --  Uncomment any of the lines below to enable them (you will need to restart nvim).
   --
   -- require 'kickstart.plugins.debug', -- Debug Adapter Protocol client implementation
+
   -- require 'kickstart.plugins.indent_line', -- Add indentation guides
+  require 'custom/plugins/hlchunk', -- markdown プレビュー : これは使える
+
   -- require 'kickstart.plugins.lint', -- Linting
   -- require 'kickstart.plugins.autopairs', -- 括弧などを自動で閉じてくれる
   -- require 'kickstart.plugins.neo-tree',  -- filer
