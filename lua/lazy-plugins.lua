@@ -106,6 +106,8 @@ require('lazy').setup({
 
   require 'custom/plugins/colorizer', -- 色を背景色で表示する
 
+  -- require 'custom/plugins/colorful-winsep', -- ウィンドウ枠に色を付ける:うまく表示されない
+
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
   --
