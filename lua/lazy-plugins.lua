@@ -71,9 +71,11 @@ require('lazy').setup({
 
   require 'custom/plugins/undotree', -- undotree 可視化
 
-  require 'custom/plugins/im-select', -- IME 自動切換え :
-  --require 'custom/plugins/win-ime-con', -- IME 自動切換え : 起動時に遅い
-  -- require 'custom/plugins/spzenhan', -- IME 自動切換え : エラーが発生する
+  -- 実行ファイルを /mnt/d/kepax/bin に置くこと。でないと異常に遅い。
+  -- require 'custom/plugins/im-select', -- IME 自動切換え : WSL だと遅すぎ
+  -- require 'custom/plugins/win-ime-con', -- IME 自動切換え : 起動時に遅い
+  -- 実行ファイルを /mnt/d/kepax/bin に置くこと。でないと異常に遅い。
+  require 'custom/plugins/spzenhan', -- IME 自動切換え : WSLで使える
 
   require 'custom/plugins/markdown-preview', -- markdown プレビュー : これは使える
   -- require 'custom/plugins/render-markdown', -- markdown プレビュー : これは使える

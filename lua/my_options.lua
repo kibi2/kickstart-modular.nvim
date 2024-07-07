@@ -64,4 +64,18 @@ vim.api.nvim_set_option_value('shellcmdflag', '-c', {}) -- zsh 用
 -- ウィンドウを閉じずにバッファを閉じる
 vim.api.nvim_create_user_command('Bd', ':bp|:sp|:bn|:bd', {})
 
+-- システムクリップボードを使う。:h provider-clipboard
+vim.g.clipboard = {
+  name = 'WslClipboard',
+  copy = {
+    ['+'] = 'clip.exe',
+    ['*'] = 'clip.exe',
+  },
+  paste = {
+    ['+'] = 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+    ['*'] = 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+    ['cache_enabled'] = 0,
+  },
+}
+
 -- vim: ts=2 sts=2 sw=2 et
