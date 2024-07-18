@@ -14,6 +14,9 @@ vim.opt.scrolloff = 2
 -- ファイル
 -- エンコーディングをUTF-8に設定
 vim.opt.fileencoding = 'utf-8'
+vim.opt.encoding = 'utf-8'
+vim.opt.fileencodings = 'utf-8'
+vim.opt.fileformats = 'unix,dos,mac'
 
 -- スワップファイルを作成しない
 vim.opt.swapfile = false
