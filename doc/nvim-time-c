@@ -1,2 +1,0 @@
-#!/bin/sh
-vim-startuptime -vimpath nvim -- --clean > vim-time-c.txt
